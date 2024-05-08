@@ -56,7 +56,7 @@ body.dark-theme {
 section {
   min-height: 50vh;
   padding: 1rem;
-  padding: 0 8%;
+  padding: 0 1%;
 }
 
 .btn {
@@ -185,7 +185,7 @@ section {
 }
 
 .home .image img {
-  height: 60rem;
+  height: 29rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
   border-top: 3rem solid var(--primary-bg-color);
   border-right: 3rem solid var(--primary-bg-color);
@@ -760,7 +760,69 @@ h4 {
 #theme-toggler.fa-sun {
   transform: rotate(-180deg);
 }
+.default__none {
+  display: none;
+}
 
+.for__skill div {
+  /* width: 90%; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 80px;
+  background-color: white;
+  /* margin: 100px 0px; */
+  margin-top: 0px;
+  padding: 30px;
+  border-radius: 0px 20px;
+  /* margin-left: 100px; */
+  box-shadow: 5px 10px 5px #0000004f;
+}
+.for__skill picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.for__skill h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: medium;
+  margin: 5px;
+  color: #4c84ff;
+}
+.skill__title {
+  display: flex;
+  /* width: 90%; */
+  /* margin: 100px 10px 0px 10px; */
+  /* border-radius: 20px; */
+}
+.skill__title aside {
+  display: flex;
+  width: 100%;
+}
+.skill__title h2 {
+  text-transform: capitalize;
+  padding: 10px;
+  background-color: white;
+  border-radius: 0px 0px 0px 0px;
+  width: 200px;
+  text-decoration: underline;
+  font-size: 30px;
+  text-align: end;
+}
+.skill__title p {
+  text-transform: capitalize;
+
+  /* padding: 10px; */
+  /* margin: 0px 0px 0px 10px; */
+  /* width: 90%; */
+  /* border-radius: 20px 20px 0px 0px; */
+  background-color: rgb(221, 231, 249);
+  /* margin-left: 90px; */
+}
+.skill__title span {
+  background-color: rgb(221, 231, 249);
+}
 /* media queries  */
 
 @media (max-width: 991px) {
@@ -778,6 +840,29 @@ h4 {
   .home .image img {
     height: auto;
     width: 100%;
+  }
+  .skill__title p {
+    margin: 0px 0px;
+  }
+  .for__skill div {
+    margin: 0px 0px 0px 10px;
+    width: 95%;
+    padding: 10px;
+    gap: 10px;
+  }
+  .for__skill h1 {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .for__skill picture {
+    padding: 10px;
+  }
+  .for__skill div img {
+    height: 50px;
+    width: 50px;
+  }
+  .skill__title h2 {
+    width: auto;
   }
 }
 
